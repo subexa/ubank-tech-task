@@ -40,7 +40,9 @@ describe("Login/Logout User Journey", () => {
   })
 
   it("Logout user", () => {
-    //Use a custom command to log in user
-    //Log the user out
+    cy.login(standardUser, password)
+    cy.findByRole("button", { name: "Open Menu" }).click()
+    cy.findByRole("link", { name: "Logout" }).click()
+    cy.url().should("eq", "https://www.saucedemo.com/")
   })
 })
