@@ -1,4 +1,3 @@
-import "@testing-library/cypress/add-commands"
 import loginData from "../fixtures/login-data.json"
 
 Cypress.Commands.add("login", (username, password) => {
