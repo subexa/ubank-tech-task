@@ -41,7 +41,7 @@ describe("Login/Logout User Journey", () => {
 
   it("Logout user", () => {
     cy.login(standardUser, password)
-    cy.findByRole("button", { name: "Open Menu" }).click()
+    cy.openBurgerMenu()
     cy.findByRole("link", { name: "Logout" }).click()
     cy.url().should("eq", "https://www.saucedemo.com/")
   })
