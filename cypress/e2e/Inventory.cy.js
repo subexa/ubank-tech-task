@@ -1,7 +1,3 @@
-import loginData from "../fixtures/login-data.json"
-const standardUser = loginData.usernames[0]
-const password = loginData.password
-
 const sortingOptions = [
   "Name (A to Z)",
   "Name (Z to A)",
@@ -11,7 +7,7 @@ const sortingOptions = [
 
 describe("Products page", () => {
   beforeEach(() => {
-    cy.login(standardUser, password)
+    cy.standardUserLogin()
   })
 
   it("Product page contents", () => {
@@ -58,4 +54,7 @@ describe("Products page", () => {
     cy.findByTestId("product_sort_container").select("Price (high to low)")
     cy.checkSortingByPrice(".inventory_item_price", "desc")
   })
+
+  // TODO: Add to Cart
+  // TODO: Remove from Cart
 })
