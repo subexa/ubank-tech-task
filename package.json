@@ -1,7 +1,10 @@
 {
   "scripts": {
     "cy:run": "cypress run --browser chrome",
-    "cy:open": "cypress open"
+    "cy:open": "cypress run --browser chrome --headed"
+  },
+  "engines": {
+    "node": "^18"
   },
   "devDependencies": {
     "@testing-library/cypress": "^9.0.0",
