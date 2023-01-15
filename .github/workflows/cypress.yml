@@ -1,8 +1,8 @@
-name: Cypress Tests
+name: E2E Tests
 run-name: ${{ github.actor }} is testing E2E tests 🚀
 on: [push, workflow_dispatch]
 jobs:
-  Run-Cypress-E2E-Tests:
+  Run-E2E-Tests:
     runs-on: ubuntu-latest
     steps:
       - name: Install node
