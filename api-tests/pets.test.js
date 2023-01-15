@@ -18,4 +18,18 @@ describe("Pet API test", () => {
       genericResponseSchema.validateSync(res.body)
     })
   })
+
+  describe("Update pet details", () => {
+    it("Updates pet name", async () => {
+      request
+        .post("/pet/19")
+        .send("name=Rain")
+        .expect(200)
+        .then(async (updateRes) => {
+          genericResponseSchema.validateSync(updateRes.body)
+          const petResponse = await request.get("/pet/19").expect(200)
+          expect(petResponse.body.name).to.equal("Rain")
+        })
+    })
+  })
 })
