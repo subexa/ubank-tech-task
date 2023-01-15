@@ -32,4 +32,15 @@ describe("Pet API test", () => {
         })
     })
   })
+
+  describe("Delete a pet", () => {
+    it("Deletes an existing pet", async () => {
+      const res = await request.delete("/pet/19").expect(200)
+      genericResponseSchema.validateSync(res.body)
+    })
+
+    it("Error: Deletes a non-existing pet", async () => {
+      await request.delete("/pet/-1").expect(404)
+    })
+  })
 })
