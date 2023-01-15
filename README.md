@@ -7,6 +7,7 @@
 3. Run `npm install`
 4. Run `npm run cy:open` for headed mode
 5. Run `npm run cy:run` for headless mode
+6. Test report generated at `cypress/reports`
 
 # REST API funtional testing using [Supertest library](https://github.com/ladjs/supertest)
 
@@ -18,6 +19,7 @@
 2. Install nodejs version 18 https://nodejs.org/en/download/package-manager/
 3. Run `npm install`
 4. Run `npm run test:api`
+5. Test report generated at `api-tests/reports`
 
 # Steps to run tests on the ci
 

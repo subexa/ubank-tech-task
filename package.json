@@ -3,7 +3,7 @@
   "scripts": {
     "cy:run": "cypress run --browser chrome",
     "cy:open": "cypress run --browser chrome --headed",
-    "test:api": "mocha api-tests/**/*.test.js"
+    "test:api": "mocha api-tests/**/*.test.js --reporter mochawesome --reporter-options reportDir=api-tests/reports"
   },
   "engines": {
     "node": "^18"
