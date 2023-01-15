@@ -39,7 +39,7 @@ describe("Pet API test", () => {
       genericResponseSchema.validateSync(res.body)
     })
 
-    it("Error: Deletes a non-existing pet", async () => {
+    it("Returns an error when deleting a non-existing pet", async () => {
       await request.delete("/pet/-1").expect(404)
     })
   })
