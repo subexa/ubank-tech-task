@@ -1,3 +1,5 @@
+GitHub url: https://github.com/subexa/ubank-tech-task
+
 # Cypress Test for uBank on [SauceDemo](https://www.saucedemo.com/)
 
 ### Steps to run Cypress UI tests locally
