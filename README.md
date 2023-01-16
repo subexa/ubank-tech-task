@@ -26,5 +26,5 @@ GitHub url: https://github.com/subexa/ubank-tech-task
 # Steps to run tests on the ci
 
 1. Go to Github Actions https://github.com/subexa/ubank-tech-task/actions/workflows/cypress.yml 
-2. On `Cypress Tests` workflow, click on `Run workflow`
+2. On `E2E Tests` workflow, click on `Run workflow`
 3. Use the Use workflow from `main` branch and click `Run workflow`
